@@ -13,14 +13,15 @@
   <script>
     $(document).ready(function(){
       $("button").click(function(){
-        var div = $("#grupo1");  
-        div.animate({left: '100px'}, "slow");
+        var div = $("#g1");  
+        div.animate({left: '300px'}, "slow");
         div.animate({fontSize: '3em'}, "slow");
       });
     });
       </script>
       <button >Animar</button>
-      <div style="background:#1b30be;height:100px;width:200px;position:absolute;">Miembros</div>
+      <div id="g1" style="background:#1b30be;height:100px;width:250px;position:absolute;color:white;text-align: center;">Miembros</div>
+      <br>
 <table>
   <li>Alejandro Marín Rosario</li>
   <li>Daniel José Laguna Petrus</li>
