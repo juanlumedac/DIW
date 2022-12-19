@@ -64,7 +64,15 @@
     <!-- Cuerpo del script en el que trabajaremos -->
     <script>
         // Cuando el documento esté listo $(document).ready(function() {});
-       
+        $(function () {
+           var keydownVeces = 0;
+           
+           $('#elemento').keydown(function (event) {
+                $('#keydownveces span').html(++keydownVeces);
+                $('#teclakeydown span').html(event.which); //devuelve "keycode" de tecla pulsada
+           });
+            
+         });
 
     </script>
 </body>
